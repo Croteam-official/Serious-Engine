@@ -28,3 +28,35 @@
 *.app
 !Bison.exe
 !Flex.exe
+
+# CMake Build dirs (temp)
+Build/
+Debug/
+
+# Visual Studio
+*.vs
+*.opendb
+*.sdf
+
+# Configs from playing
+*.plr
+Temp/ConsoleHistory.txt
+*.log
+*.rpt	# crashinfo
+Data/SeriousSam.gms
+
+# generated files:
+Sources/Engine/Ska/smcScan.cpp
+Sources/Engine/Ska/smcPars.cpp
+Sources/Engine/Base/Scanner.cpp
+
+Sources/Engine/Classes/*.h
+Sources/Engine/Classes/*.cpp
+
+Sources/Ecc/Scanner.cpp
+
+Sources/EntitiesMP/*.h
+Sources/EntitiesMP/*.cpp
+
+Sources/SeriousSkaStudio/Scanner.cpp
+
