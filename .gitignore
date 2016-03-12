@@ -35,3 +35,14 @@ Build/
 # generated files:
 Sources/Engine/Ska/smcPars.cpp
 Sources/Ecc/Scanner.cpp
+
+Sources/EntitiesMP/*.h
+Sources/EntitiesMP/*.cpp
+
+Sources/Engine/Classes/*.h
+Sources/Engine/Classes/*.cpp
+
+Sources/Engine/Base/Scanner.cpp
+Sources/Engine/Ska/smcScan.cpp
+Sources/SeriousSkaStudio/Scanner.cpp
+
