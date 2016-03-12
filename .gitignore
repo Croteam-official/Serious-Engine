@@ -31,6 +31,18 @@
 
 # CMake Build dirs (temp)
 Build/
+Debug/
+
+# Visual Studio
+*.vs
+*.opendb
+*.sdf
+
+# Configs from playing
+*.plr
+Temp/ConsoleHistory.txt
+SeriousSam.log
+Data/SeriousSam.gms
 
 # generated files:
 Sources/Engine/Ska/smcPars.cpp
