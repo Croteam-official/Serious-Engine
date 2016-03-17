@@ -62,7 +62,7 @@ And its working directory:
 Common problems
 ---------------
 
-In case if you are getting "fatal error C1083: Cannot open include file: 'Engine/Classes/BaseEvents.h'", or in case if ECC crashes during compilation of ES files in debug mode, make your solution path shorter. Paths longer than 31 symbols are known to cause problems in debug mode.
+If you are getting "fatal error C1083: Cannot open include file: 'Engine/Classes/BaseEvents.h'", or if ECC crashes during compilation of ES files in debug mode, make your solution path shorter. Paths longer than 31 symbols are known to cause problems in debug mode.
 Before starting the build process, make sure you have a "Temp" folder in your development directory. If it doesn't exist, create it.
 SeriousSkaStudio has some issues with MFC windows that can prevent the main window from being displayed properly.
 
