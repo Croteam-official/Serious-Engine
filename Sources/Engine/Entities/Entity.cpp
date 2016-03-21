@@ -3534,7 +3534,7 @@ void CEntity::DumpSync_t(CTStream &strm, INDEX iExtensiveSyncCheck)  // throw ch
       (ULONG&)en_mRotation(3,1), (ULONG&)en_mRotation(3,2), (ULONG&)en_mRotation(3,3));
     if( en_pciCollisionInfo == NULL) {
       strm.FPrintF_t("Collision info NULL\n");
-    } else if (en_RenderType==RT_BRUSH && en_RenderType==RT_FIELDBRUSH) {
+    } else if (en_RenderType==RT_BRUSH || en_RenderType==RT_FIELDBRUSH) {
       strm.FPrintF_t("Collision info: Brush entity\n");
     } else {
       strm.FPrintF_t("Collision info:\n");
