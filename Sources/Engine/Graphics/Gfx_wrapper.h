@@ -177,7 +177,7 @@ public:
   GfxWrap tp_eWrapU, tp_eWrapV;  // wrapping states
   inline CTexParams(void) { Clear(); tp_bSingleMipmap = FALSE; };
   inline void Clear(void) { tp_iFilter = 00; tp_iAnisotropy = 0; tp_eWrapU = tp_eWrapV = (GfxWrap)NONE; };
-  inline BOOL IsEqual( CTexParams tp) { return tp_iFilter==tp.tp_iFilter && tp_iAnisotropy==tp_iAnisotropy && 
+  inline BOOL IsEqual( CTexParams tp) { return tp_iFilter==tp.tp_iFilter && tp_iAnisotropy==tp.tp_iAnisotropy && 
                                                tp_eWrapU==tp.tp_eWrapU && tp_eWrapV==tp.tp_eWrapV; };
 };
 
