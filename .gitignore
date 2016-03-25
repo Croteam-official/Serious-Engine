@@ -39,6 +39,8 @@ Debug/
 *.sdf
 *.map
 *.opensdf
+*.pdb
+*.sbr
 *.suo
 *.tlog
 *.ipch
