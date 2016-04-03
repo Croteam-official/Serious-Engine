@@ -1356,9 +1356,6 @@
     <ClInclude Include="GameShell.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sound\ov_functions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="StdH.h">
       <Filter>Header Files</Filter>
     </ClInclude>

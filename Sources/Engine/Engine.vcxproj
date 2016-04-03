@@ -97,6 +97,7 @@
       <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DisableSpecificWarnings>4603;4996;4812;4333</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\libvorbis\include\;..\libogg\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -120,10 +121,11 @@
       <SubSystem>Console</SubSystem>
       <OutputFile>Debug/EngineD.dll</OutputFile>
       <ImportLibrary>.\Debug\EngineD.lib</ImportLibrary>
-      <AdditionalDependencies>gdi32.lib;DbgHelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libvorbisfile.lib;gdi32.lib;DbgHelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateMapFile>true</GenerateMapFile>
       <IgnoreSpecificDefaultLibraries>libci.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Bin\Debug</AdditionalLibraryDirectories>
     </Link>
     <CustomBuildStep>
       <Command>copy Debug\$(TargetName).dll $(SolutionDir)..\Bin\Debug\ &gt;nul
@@ -155,6 +157,7 @@ copy Debug\$(TargetName).lib $(SolutionDir)..\Bin\Debug\ &gt;nul</Command>
       <ObjectFileName>.\Release\</ObjectFileName>
       <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
       <DisableSpecificWarnings>4603;4996;4812;4333</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\libvorbis\include\;..\libogg\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -178,10 +181,11 @@ copy Debug\$(TargetName).lib $(SolutionDir)..\Bin\Debug\ &gt;nul</Command>
       <SubSystem>Console</SubSystem>
       <OutputFile>.\Release\Engine.dll</OutputFile>
       <ImportLibrary>.\Release\Engine.lib</ImportLibrary>
-      <AdditionalDependencies>odbc32.lib;odbccp32.lib;DbgHelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libvorbisfile.lib;odbc32.lib;odbccp32.lib;DbgHelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateMapFile>true</GenerateMapFile>
       <IgnoreSpecificDefaultLibraries>libci.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Bin</AdditionalLibraryDirectories>
     </Link>
     <CustomBuildStep>
       <Command>copy Release\$(TargetName).dll $(SolutionDir)..\Bin\ &gt;nul
@@ -895,7 +899,6 @@ copy Release\$(TargetName).lib $(SolutionDir)..\Bin\ &gt;nul</Command>
     <ClInclude Include="CurrentVersion.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="GameShell.h" />
-    <ClInclude Include="Sound\ov_functions.h" />
     <ClInclude Include="StdH.h" />
   </ItemGroup>
   <ItemGroup>
