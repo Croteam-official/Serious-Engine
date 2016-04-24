@@ -17,6 +17,10 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 //  or project specific include files that are used frequently, but
 //      are changed infrequently
 //
+//fixing undefined pointer struct referenced in winnt.h
+#if !define POINTER_64
+#define POINTER_64 __ptr64
+#endif 
 
 #if !defined(AFX_STDAFX_H__2FCD461B_96D7_11D5_9918_000021211E76__INCLUDED_)
 #define AFX_STDAFX_H__2FCD461B_96D7_11D5_9918_000021211E76__INCLUDED_

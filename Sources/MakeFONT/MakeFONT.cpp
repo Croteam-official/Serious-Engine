@@ -15,6 +15,10 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 
 // MakeFONT - Font table File Creator
+//fixing undefined pointer struct referenced in winnt.h
+#if !define POINTER_64 
+#define POINTER_64 __ptr64
+#endif
 
 #include <stdio.h>
 #include <stdlib.h>

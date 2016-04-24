@@ -29,6 +29,11 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include <search.h>   // for qsort
 #include <float.h>    // for FPU control
 
+//fixing undefined pointer struct referenced in winnt.h
+#if !define POINTER_64
+#define POINTER_64 __ptr64
+#endif 
+
 #include <crtdbg.h>
 
 #include <winsock2.h>
