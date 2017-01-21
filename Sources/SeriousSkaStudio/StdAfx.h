@@ -18,6 +18,11 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 //      are changed infrequently
 //
 
+//fixing undefined pointer struct referenced in winnt.h
+#if !define POINTER_64
+#define POINTER_64 __ptr64
+#endif 
+
 #if !defined(AFX_STDAFX_H__395D5845_FE79_4FF6_A71C_34C178CB4AE3__INCLUDED_)
 #define AFX_STDAFX_H__395D5845_FE79_4FF6_A71C_34C178CB4AE3__INCLUDED_
 

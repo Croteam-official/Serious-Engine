@@ -18,6 +18,11 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 //      are changed infrequently
 //
 
+//fixing undefined pointer struct referenced in winnt.h
+#if !define POINTER_64 
+#define POINTER_64 __ptr64
+#endif
+
 #define VC_EXTRALEAN		// Exclude rarely-used stuff from Windows headers
 
 #include <afxwin.h>         // MFC core and standard components
