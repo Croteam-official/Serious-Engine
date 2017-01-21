@@ -35,11 +35,15 @@ Debug/
 
 # Visual Studio
 *.vs
+*.bsc
+*.cnt
+*.exp
 *.opendb
 *.sdf
 *.map
 *.opensdf
 *.pdb
+*.res
 *.sbr
 *.suo
 *.tlog
