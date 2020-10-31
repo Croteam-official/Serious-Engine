@@ -74,7 +74,7 @@ FLOAT Sin(ANGLE a)
 {
   double aWrapped = WrapAngle(a);
   double aIn90 = fmod(aWrapped, 90.0);
-  int iQuadrant = int(aWrapped/90.0);
+  int iQuadrant = int(aWrapped/90.0)%4;
   double fSin = adSinQuadrants[iQuadrant][0]*
     sin((aIn90+adSinQuadrants[iQuadrant][1])*PI/ANGLE_180);
   return FLOAT (fSin);
@@ -83,7 +83,7 @@ FLOAT Cos(ANGLE a)
 {
   double aWrapped = WrapAngle(a);
   double aIn90 = fmod(aWrapped, 90.0);
-  int iQuadrant = int(aWrapped/90.0);
+  int iQuadrant = int(aWrapped/90.0)%4;
   double fCos = adCosQuadrants[iQuadrant][0]*
     sin((aIn90+adCosQuadrants[iQuadrant][1])*PI/ANGLE_180);
   return FLOAT (fCos);
